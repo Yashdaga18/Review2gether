@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(routes);
 
 mongoose.Promise = Promise;
-mongoose.connect("mongodb://localhost/movies",
+mongoose.connect(  "mongodb+srv://ranjanraj1:sb4isOQaaneTZYOR@cluster0.7wguhrg.mongodb.net/review",
   { useNewUrlParser: true, useUnifiedTopology: true }
 );
 
