@@ -7,7 +7,9 @@
     "node": "10.16.3"
   },
   "scripts": {
-    "start": "nodemon server.js"
+    "server": "nodemon server.js",
+    "client":"npm start --prefix client",
+    "start":"concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Yash Daga",
   "dependencies": {
